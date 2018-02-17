@@ -10,3 +10,6 @@ same_lists Refl Refl = Refl
 
 data ThreeEq : a -> b -> c -> Type where
      ThreeEqTheyDo : ThreeEq x x x
+
+allSameS : (x, y, z : Nat) -> ThreeEq x y z -> ThreeEq (S x) (S y) (S z)
+allSameS = ?rhs
